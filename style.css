@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-darkest: #0D1B2A;
+    --color-dark: #1B263B;
+    --color-medium: #415A77;
+    --color-light: #778DA9;
+    --color-lightest: #E0E1DD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-wrap {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: var(--color-darkest);
+    color: var(--color-lightest);
+    padding: 40px;
+    grid-row: 1 / 3;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 100px repeat(5, 50px) 100px repeat(3, 50px);    
+}
+
+.header {
+    background-color: var(--color-lightest);
+}
+
+.main {
+    background-color: var(--color-light);
+}
+
